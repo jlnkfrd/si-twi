@@ -1,0 +1,21 @@
+<h2>Welcome {{ name }}!</h2>
+<a href="{{ app.url_generator.generate('logout') }}">Logout</a>
+
+<h3>Add Post</h3>
+<form method="post">
+	<input type="hidden" name="username" value="{{name}}" />
+	<label for="username">Say something</label><input type="text" name="content" /><br />
+	<button type="submit">Post It</button>
+</form>
+
+
+<h3>Posts</h3>
+<ul>
+	{% for post in posts %}
+		<li>
+			<strong>{{ post.username }}</strong><br />
+			{{ post.content }}<br />
+			<em>{{ post.created_at }}</em>
+		</li>
+	{% endfor %}
+</ul>

@@ -1,0 +1,13 @@
+<h2>Log.In.Now.</h2>
+	
+<form method="post">
+	<label for="username">Who are you?</label>
+	<input type="text" name="username" /><br />
+	
+	<label for="password">How do I know its you?</label>
+	<input type="password" name="password" /><br />
+	
+	<button type="submit">Do It</button>
+</form>
+
+<p><a href="{{ app.url_generator.generate('user.create') }}">Create User</a></p>
