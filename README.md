@@ -1,4 +1,6 @@
-# Sample Twitter project using Silex
+# Sample Twitter project using the PHP Framework Silex
+
+Note: This was a quick project I submitted to a hiring manager when I was interviewing for a new position. It was put together in about 2 hours to show proficiency with the Silex Framework and does not include any front-end work.
 
 Uses Eloquent for an ORM.
 
